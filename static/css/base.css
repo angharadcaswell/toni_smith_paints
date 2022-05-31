@@ -143,3 +143,19 @@ li {
   .logo-small {
     width: auto;
   }
+
+  /* Products page */
+
+  .overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.products-container {
+    margin-top: 10px;
+}
