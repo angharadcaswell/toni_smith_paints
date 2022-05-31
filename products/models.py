@@ -1,6 +1,6 @@
 from django.db import models
 
-class Catergory(models.Model):
+class Category(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -16,13 +16,19 @@ print_sizes = (
     ("card", "card"),
 )
 
+class Size(models.Model):
+    name = models.CharField(max_length=4, choices=print_sizes, default="A4")
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+
+    def __str__(self):
+        return self.name
+
 class Product(models.Model):
-    catergory = models.ForeignKey('Catergory', null = True, blank = True, on_delete = models.SET_NULL)
+    category = models.ForeignKey('Category', null = True, blank = True, on_delete = models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)
-    print_sizes = models.CharField(max_length=4, choices=print_sizes, default="A4")
+    sizes = models.ManyToManyField(Size)
 
     def __str__(self):
         return self.name
