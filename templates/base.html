@@ -15,6 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -32,7 +33,21 @@
     <title>Toni Smith Paints</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <!-- <header class="container-fluid fixed-top nav">
+        <a href="{% url 'home' %}">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/651/original/Toni_Smith_Name_no_Background_190321_%281%29_1.png?1617726004"
+            class="logo d-none d-md-block" alt="Logo" />
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/644/original/Tonilogo.png?1617724508"
+                class="logo-small logo d-block d-md-none" alt="Toni Smith Paints Logo " />
+        </a>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="active">Shop Now</a></li>
+            </ul>
+        </nav>
+    </header> -->
 
     {% if messages %}
         <div class="message-container"></div>
