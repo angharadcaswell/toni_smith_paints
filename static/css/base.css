@@ -41,7 +41,7 @@ h2 {
 .title_homepage {
     position: absolute;
     left: 700px;
-    top: 300px;
+    top: 150px;
 }
 
 .nav_bar_home{
@@ -100,36 +100,34 @@ a:hover {
 
 /* Nav bar */
 .nav {
-    background: #525251; 
+    background: #E2FFFD ;
 }
 
-#menu ul {
-    float: right;
+#menu ul, .icon ul {
     list-style-type:none;
     padding-top: 8px;
     padding-bottom:8px;
+    margin-top: 20px;
 }
 
-#menu li {
+#menu li{
     float: left;
     margin-right: 30px;
+    color: #000 !important;
 }
 
-ul {
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    list-style-type:none;
-
+#menu a {
+    color: #000 !important;
 }
 
-li {
-    padding-bottom: 10px;
+#menu a:hover {
+    text-decoration: none; 
+    color: grey !important;
 }
 
-.active {
-    border-bottom: 1px solid #FFF;
-}
+ .icon li {
+    color: #000 !important;
+ }
 
 .logo {
     width: 200px;

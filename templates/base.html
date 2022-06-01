@@ -22,6 +22,7 @@
     {% endblock %}
 
     {% block corejs %}
+        <script src="https://kit.fontawesome.com/1c82e6ee7d.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -32,23 +33,32 @@
 
     <title>Toni Smith Paints</title>
   </head>
-  <body>
-    <!-- <header class="container-fluid fixed-top nav">
+  <header>
+        <nav id="menu" class="nav">
         <a href="{% url 'home' %}">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/651/original/Toni_Smith_Name_no_Background_190321_%281%29_1.png?1617726004"
             class="logo d-none d-md-block" alt="Logo" />
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/644/original/Tonilogo.png?1617724508"
                 class="logo-small logo d-block d-md-none" alt="Toni Smith Paints Logo " />
         </a>
-        <nav id="menu">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="{% url 'products' %}">Shop Now</a></li>
-            </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'products' %}">Shop Now</a></li>
+        </ul>
+        
+        <ul class="icon nav navbar-nav ml-auto">
+            <li>
+                    <i class="fas fa-shopping-bag fa-lg"></i>
+            </li>
+            <li>
+                    <i class="fas fa-user fa-lg"></i>
+            </li>
+        </ul>
         </nav>
-    </header> -->
-
+        
+   </header>
+  <body>
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
