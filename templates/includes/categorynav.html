@@ -8,11 +8,10 @@
             Art Categories
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="" class="dropdown-item"></a>
-            <a href="" class="dropdown-item ">Greystones Today</a>
-            <a href="" class="dropdown-item ">Greystones Timless</a>
-            <a href="" class="dropdown-item ">Greystones The way it was</a>
-            <a href="" class="dropdown-item ">Other Beautiful Places</a>
+            <a href="{% url 'products' %}?category=greystones_today" class="dropdown-item ">Greystones Today</a>
+            <a href="{% url 'products' %}?category=greystones_timeless" class="dropdown-item ">Greystones Timless</a>
+            <a href="{% url 'products' %}?category=greystones_the_way_it_was"  class="dropdown-item ">Greystones The way it was</a>
+            <a href="{% url 'products' %}?category=other_beautiful_places"  class="dropdown-item ">Other Beautiful Places</a>
             <a href="{% url 'products' %}" class="dropdown-item">All art</a>
         </div>
     </li>
