@@ -1,0 +1,22 @@
+<div class="search_nav">
+<ul id="menu" class="nav list-unstyled text-center justify-content-center">
+    <li class=" nav-item list-inline-item"><a href="#">About</a></li>
+    <li class=" nav-item list-inline-item"><a href="#">Contact</a></li>
+    <li class=" nav-item list-inline-item"><a href="{% url 'products' %}">Shop Now</a></li>
+    <li class=" nav-item list-inline-item" class="dropdown ">
+        <a class="font-weight-bold nav-link text-black" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Art Categories
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <a href="" class="dropdown-item"></a>
+            <a href="" class="dropdown-item ">Greystones Today</a>
+            <a href="" class="dropdown-item ">Greystones Timless</a>
+            <a href="" class="dropdown-item ">Greystones The way it was</a>
+            <a href="" class="dropdown-item ">Other Beautiful Places</a>
+            <a href="{% url 'products' %}" class="dropdown-item">All art</a>
+        </div>
+    </li>
+</ul>
+
+</div>
+

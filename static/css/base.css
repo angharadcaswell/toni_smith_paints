@@ -10,10 +10,18 @@ h1 {
     color: #000;
 }
 
-h2 {
+h2{
     font-family:'Raleway', sans-serif;
     font-weight: 150;
     color: #000;
+}
+
+a, p {
+    font-family:'Raleway', sans-serif;
+    font-weight: 150;
+    font-size: 20px;
+    color: #000;
+
 }
 
 /* Home page */
@@ -68,16 +76,16 @@ a:hover {
     color: #FFF;
 }
 .about_image {
-    background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/886/original/Toni1.png?1654009981');
+    background: #5ea8a3 ;
 }
 
 
 .shop_image {
-    background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/888/original/product.png?1654010438');
+    background: grey ;
 }
 
 .contact_image {
-    background: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/885/original/shopnowimg.png?1654009778');
+    background: #5ea8a3 ;
 }
 
 .homepage-links {
@@ -99,25 +107,27 @@ a:hover {
 }
 
 /* Nav bar */
-.nav {
-    background: #E2FFFD ;
+.nav-color {
+    background: #5ea8a3;
+    height: 100px;
 }
 
-#menu ul, .icon ul {
+#menu ul{
     list-style-type:none;
-    padding-top: 8px;
-    padding-bottom:8px;
-    margin-top: 20px;
+ 
 }
 
 #menu li{
-    float: left;
     margin-right: 30px;
     color: #000 !important;
+
 }
+
 
 #menu a {
     color: #000 !important;
+    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 #menu a:hover {
@@ -132,7 +142,7 @@ a:hover {
 .logo {
     width: 200px;
     height: 75px;
-    float: left;
+
     margin-left: 20px;
     padding: 10px;
     box-shadow: none !important;
@@ -141,6 +151,12 @@ a:hover {
   .logo-small {
     width: auto;
   }
+  #menu {
+    background: #E2FFFD ;
+    height: 60px;
+  }
+
+
 
 
 /* -------------------------------- Media Queries */

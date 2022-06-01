@@ -34,29 +34,44 @@
     <title>Toni Smith Paints</title>
   </head>
   <header>
-        <nav id="menu" class="nav">
+        <nav  class="nav nav-color">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/651/original/Toni_Smith_Name_no_Background_190321_%281%29_1.png?1617726004"
             class="logo d-none d-md-block" alt="Logo" />
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/644/original/Tonilogo.png?1617724508"
                 class="logo-small logo d-block d-md-none" alt="Toni Smith Paints Logo " />
         </a>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="{% url 'products' %}">Shop Now</a></li>
-        </ul>
-        
-        <ul class="icon nav navbar-nav ml-auto">
-            <li>
+    </div>
+
+      
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <form method="GET" action="{% url 'products' %}">
+                        <div class="input-group w-100">
+                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                            <div class="input-group-append">
+                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                    <span class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+  
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <ul class=" list-unstyled text-center nav justify-content-end">
+            <li class="nav-item">
                     <i class="fas fa-shopping-bag fa-lg"></i>
             </li>
-            <li>
+            <li class="nav-item pl-4 pr-4">
                     <i class="fas fa-user fa-lg"></i>
             </li>
         </ul>
-        </nav>
         
+        </nav>
+        {% include 'includes/categorynav.html' %}
    </header>
   <body>
     {% if messages %}
